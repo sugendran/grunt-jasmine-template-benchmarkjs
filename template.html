@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Jasmine Spec Runner with Benchmarking</title>
+  <% css.forEach(function(style){ %>
+    <link rel="stylesheet" type="text/css" href="<%= style %>">
+  <% }) %>
+
+  <script src="<%= temp %>/benchmark.js"></script>
+  <% if (useNanoTime) { %>
+    <applet code="nano" archive="<%= temp %>/nano.jar"></applet>
+  <% } %>
+
+  <% with (scripts) { %>
+    <% [].concat(polyfills, jasmine, vendor, helpers, src, specs,reporters).forEach(function(script){ %>
+    <script src="<%= script %>"></script>
+    <% }) %>
+  <% }; %>
+</head>
+<body>
+</body>
+</html>

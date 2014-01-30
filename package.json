@@ -1,0 +1,22 @@
+{
+  "name": "grunt-jasmine-template-benchmarkjs",
+  "version": "0.0.1",
+  "description": "BenchmarkJS template for grunt-contrib-jasmine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sugendran/grunt-jasmine-template-benchmarkjs.git"
+  },
+  "keywords": [
+    "grunt",
+    "jasmine",
+    "benchmark"
+  ],
+  "author": "Sugendran Ganess",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "09d14ea55be2731837554f77673a5fbbb675726a"
+}
